@@ -5,17 +5,20 @@
         private string word;
         private SortedSet<char> matchedCharacters;
         private char[] wordState;
-
+        private int MyRemainingLives;
         public HangmanGame()
         {
             word = "computer";
-            RemainingLives = 5;
+            MyRemainingLives = 5;
             matchedCharacters = new SortedSet<char>();
             wordState = word.ToCharArray();
             ClearWordState();
         }
 
-        public int RemainingLives { get; set; }
+        public int RemainingLives {
+            get { return MyRemainingLives; }
+            set { MyRemainingLives = value; }
+        }
 
         public GameState GameState
         {
