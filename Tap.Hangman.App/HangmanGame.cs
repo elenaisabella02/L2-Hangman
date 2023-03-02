@@ -6,8 +6,19 @@
         private SortedSet<char> matchedCharacters;
         private char[] wordState;
         private int MyRemainingLives;
+        private char[] MyWordsList;
+        List<string> MyNewWordsList = new List<string>
+            { "happy", "spring", "students"};
+
+        public List<string> MyWords
+        {
+            get { return MyNewWordsList; }
+            //set { MyNewWordsList.Add(value); }
+        }
+
         public HangmanGame()
         {
+           
             word = "computer";
             MyRemainingLives = 5;
             matchedCharacters = new SortedSet<char>();
