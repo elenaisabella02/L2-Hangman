@@ -9,6 +9,7 @@
         List<string> MyNewWordsList = new List<string>
             { "happy", "spring", "students"};
 
+
         private List<string> MyWords
         {
             get { return MyNewWordsList; }
@@ -64,6 +65,7 @@
         private void AdjustGameStateBasedOnLetter(char letter, char[] wordLetters)
         {
             var foundLetter = false;
+            int nr = 0;
             for (int i = 0; i < wordLetters.Length; i++)
             {
                 char wordLetter = wordLetters[i];
@@ -71,6 +73,12 @@
                 {
                     wordState[i] = letter;
                     RemainingLives++;
+                    nr++;
+                }
+                while(nr>1)
+                {
+                    RemainingLives--;
+                    nr--;
                 }
             }
 
@@ -88,4 +96,10 @@
             }
         }
     }
+    class RomanianHangmanGame : HangmanGame
+    {
+
+    }
 }
+
+
