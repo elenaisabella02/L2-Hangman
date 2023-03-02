@@ -17,8 +17,9 @@
 
         public HangmanGame()
         {
-           
-            word = "computer";
+
+            //word = "computer";
+            word = MyNewWordsList.First();
             MyRemainingLives = 5;
             matchedCharacters = new SortedSet<char>();
             wordState = word.ToCharArray();
