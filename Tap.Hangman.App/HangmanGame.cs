@@ -56,6 +56,7 @@
                 if (wordLetter == letter)
                 {
                     wordState[i] = letter;
+                    RemainingLives++;
                 }
             }
 
