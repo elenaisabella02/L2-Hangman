@@ -6,7 +6,6 @@
         private SortedSet<char> matchedCharacters;
         private char[] wordState;
         private int MyRemainingLives;
-        private char[] MyWordsList;
         List<string> MyNewWordsList = new List<string>
             { "happy", "spring", "students"};
 
