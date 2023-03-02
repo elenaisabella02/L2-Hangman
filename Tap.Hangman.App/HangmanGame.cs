@@ -9,10 +9,10 @@
         List<string> MyNewWordsList = new List<string>
             { "happy", "spring", "students"};
 
-        public List<string> MyWords
+        private List<string> MyWords
         {
             get { return MyNewWordsList; }
-            //set { MyNewWordsList.Add(value); }
+            //private set { MyNewWordsList.Add(value); }
         }
 
         public HangmanGame()
