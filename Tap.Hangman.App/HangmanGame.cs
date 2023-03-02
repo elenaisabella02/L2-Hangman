@@ -98,7 +98,8 @@
     }
     class RomanianHangmanGame : HangmanGame
     {
-
+        List<string> MyNewWordsListRomanian = new List<string>
+        { "primavara", "iarna"};
     }
 }
 
