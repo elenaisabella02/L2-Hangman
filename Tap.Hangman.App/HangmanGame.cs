@@ -72,14 +72,13 @@
                 if (wordLetter == letter)
                 {
                     wordState[i] = letter;
-                    RemainingLives++;
-                    nr++;
+                    foundLetter = true;
                 }
-                while(nr>1)
-                {
-                    RemainingLives--;
-                    nr--;
-                }
+                //while(nr>1)
+                //{
+                    //RemainingLives--;
+                    //nr--;
+                //}
             }
 
             if (foundLetter == false)
